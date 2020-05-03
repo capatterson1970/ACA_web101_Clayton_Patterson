@@ -1,0 +1,100 @@
+body {background-color: lightgrey;}
+
+h1 {font-size: 60px;}
+h2 {font-size: 30px;}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+} 
+
+.pic {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    grid-area: pic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.early {
+    grid-area: early;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.single {
+    grid-area: single;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.married {
+    grid-area: married;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (min-width: 320px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  .25fr .25fr .5fr .5fr .5fr;
+        grid-template-areas: 
+            ".. nav .." 
+            ".. name .."
+            ".. pic .."
+            ".. early .."
+            ".. single .."
+            ".. married ..";
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr .25fr .5fr .5fr .5fr;
+        grid-template-areas: 
+            "nav nav" 
+            "name name"
+            "pic early"
+            "single single"
+            "married married";
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  .25fr .25fr .5fr .5fr .5fr;
+        grid-template-areas: 
+            "nav nav" 
+            "name name"
+            "pic early"
+            "single single"        
+            "married married";
+    }
+}
