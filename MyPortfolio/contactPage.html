@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./contact-style">
+  <script src="scripts.js"></script>
+  <title>Contact Me</title>
+</head>
+<body>
+  <form action="results.html" method="GET" enctype="multipart/form-data">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" >
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" maxlength="500" minlength="20"></textarea>
+    </div>
+
+    <div>
+      How did you heaqr about me? 
+      <div>
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" name="classmate" id="classmate">
+      </div>
+      <div>
+        <label for="resume">Resume Submission</label>
+        <input type="checkbox" name="resume" id="resume">
+      </div>
+      <div>
+       <label for="linkedin">Linkedin</label>
+       <input type="checkbox" name="linkedin" id="linkedin">
+      </div>
+      <div>
+       <label for="code">Code Academy Rec</label>
+       <input type="checkbox" name="code" id="code">
+      </div>
+    </div>
+
+    <div>
+      Do you wish to be contacted?
+      <div>
+       <label for="yes">Yes</label>
+       <input type="radio" name="contacted" id="yes" value="yes">
+      </div>
+      <div>
+        <label for="no">No</label>
+       <input type="radio" name="contacted" id="no" value="no">
+      </div>
+     </div>
+
+     <div>
+      <label for="date">Birthday Wish?</label>
+      <input type="date" name="date" id="date" min="2020-05-01">
+      </div>
+        
+  </form>
+</body>
+</html>
