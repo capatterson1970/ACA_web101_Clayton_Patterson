@@ -3,62 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./contact-style">
+  <link rel="stylesheet" href="./contact-style.css">
   <script src="scripts.js"></script>
   <title>Contact Me</title>
 </head>
 <body>
-  <form action="results.html" method="GET" enctype="multipart/form-data">
-    <div>
+  <main class="container">
+  <header class="header">
+    <h1>Contact Us</h1>
+  </header>
+
+  <section class="form">
+  <form action="results.html" method="GET" enctype="multipart/form-data" >
+    <fieldset>
+      <legend>Contact US</legend>
+    <div class="name">
       <label for="name">Name</label>
       <input type="text" name="name" id="name" >
     </div>
-    <div>
+
+    <div class="email">
       <label for="email">Email</label>
       <input type="email" name="email" id="email" required>
     </div>
-    <div>
+
+    <div class="comments">
       <label for="comments">Comments</label>
       <textarea id="comments" name="comments" maxlength="500" minlength="20"></textarea>
     </div>
 
-    <div>
-      How did you heaqr about me? 
+    <div class="about">
+      How did you hear about me? 
       <div>
-        <label for="classmate">Classmate</label>
         <input type="checkbox" name="classmate" id="classmate">
+        <label for="classmate">Classmate</label>
       </div>
       <div>
-        <label for="resume">Resume Submission</label>
         <input type="checkbox" name="resume" id="resume">
+        <label for="resume">Resume Submission</label>
       </div>
       <div>
-       <label for="linkedin">Linkedin</label>
        <input type="checkbox" name="linkedin" id="linkedin">
+       <label for="linkedin">Linkedin</label>
       </div>
       <div>
-       <label for="code">Code Academy Rec</label>
        <input type="checkbox" name="code" id="code">
+       <label for="code">Code Academy Rec</label>
       </div>
     </div>
 
-    <div>
+    <div class="contacted">
       Do you wish to be contacted?
       <div>
-       <label for="yes">Yes</label>
        <input type="radio" name="contacted" id="yes" value="yes">
+       <label for="yes">Yes</label>
       </div>
       <div>
-        <label for="no">No</label>
        <input type="radio" name="contacted" id="no" value="no">
+       <label for="no">No</label>
       </div>
      </div>
 
-     <div>
+     <div class="date">
       <label for="date">Birthday Wish?</label>
       <input type="date" name="date" id="date" min="2020-05-01">
-      </div>
-        
+    </div>
+    </fieldset>    
   </form>
+</section>
+</main>
 </body>
 </html>
